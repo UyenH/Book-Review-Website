@@ -1,0 +1,164 @@
+ * {margin: 0; padding: 0; }
+body {font-family: Arial, Helvetica, Sans-serif; 
+    background-color: #FFF7E4;
+width: auto;}
+header {
+    background-color: #FFF0CA;
+    padding: 20px;
+    height: 10em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    align-content: center;
+}
+header h1 {font-weight: bold; padding: 1.5em; color: rgb(0, 0, 0); text-align: center; 
+    position: absolute;
+    left: 30%;
+    right: 30%; 
+}
+header img{position: absolute;
+    width: 10em;
+    left: 30%;
+    right: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    }
+.button{    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    width: 7em;
+   }
+input[type="submit"]{
+    clear: left;
+    margin-left: 38%;
+}
+.booklist button, .booklist input[type="submit"]{margin-left: 10px;}
+header button a{text-decoration:none;}
+nav {background-color: #F6D692; display:flex; width: 100%;}
+p{font-size: 1.2em; margin: 30px;}
+h2{text-align: center;
+    margin: 10px;}
+
+nav a {color: black; text-decoration: none;}
+nav a:hover {color: #FFF0CA;}
+nav ul {display: table; width: auto; margin: auto;}
+nav li {display: table-cell; text-align: center; padding: 1em; list-style-type: none;}
+
+ul#dropdown li{display: block;}
+nav ul li ul#dropdown{
+    visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  margin-top: 1rem;
+} 
+nav ul li:hover > ul#dropdown,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  background-color: #F6D692;
+  text-align: center;
+}
+
+nav ul li ul#dropdown li {
+  clear: both;
+  width: auto;
+}
+main {overflow: auto; min-height: 30vh; background-color: #FFF7E4; /*width: 1000px;*/ margin: auto; box-shadow: -1000px 0 0 #f7f7f7, 1000px 0 0 #f7f7f7; padding-top: 20px;}
+
+footer {padding: 1em; background-color: #F6D692 ; font-size: 0.8em; text-align: center;}
+footer a:hover{color: whitesmoke;}
+
+p {margin-bottom: 1em;}
+
+body {font-size: 1em; font-family: arial, helvetica, sans-serif; }
+input, label, select, textarea {float: left; width: 15em; margin-bottom: 1em;  padding: 0.5em;}
+label {clear: left; padding: 0; margin: 0;}
+/*input[type="submit"] {margin-left: 15em; width: auto; padding: 0.5em 1em; clear: both; font-size: 1em;}*/
+button, input[type="submit"]{background-color: #F6D692;
+    padding: 10px;
+    border-radius: 5px;     
+    margin-bottom: 10px;
+    width: 5em;
+    text-align: center;
+    font-size: 1em;}
+form {overflow: auto; clear: both; display: block;}
+
+blockquote {display: table; margin-bottom: 1em; border-bottom: 1px solid #ccc; padding: 0.5em; }
+blockquote p {display: table-cell; width: 70%; vertical-align: top;}
+blockquote form {  display: table-cell; width: 10%;}
+
+
+.errors {padding: 1em; border: 1px solid red; background-color: lightyellow; color: red; margin-bottom: 1em; overflow: auto;}
+.errors ul {margin-left: 1em;}
+form{margin-left: 20%;}
+form p {clear: both;}
+input[type="checkbox"] {float: left; clear: left; width: auto; margin-right: 10px;}
+input[type="checkbox"] + label {clear: right;}
+
+.booklist {display: flex;
+    justify-content: flex-start;
+    align-content: stretch;
+    justify-items: start;
+    flex-direction: row;}
+.booklist table tr td form {
+    margin: 0;
+}
+.booklist table tr td{border-bottom: 5px dashed #F6D692;}
+.genres {list-style-type: none; border: 5px dashed #F6D692; border-radius: 10px;
+    display: block;
+    background-color: #FFF7E4;
+    padding: 1em;
+    margin-left: 20px;
+    float: left;}
+.genres a {color: black; text-decoration: none;}
+.genres a:hover{color: #F6D692 }
+.genres li {margin-bottom: 1em;}
+/*.booklist */
+.books {display: inline-block;
+    width: auto;
+    margin-left: 25px;}
+table img{width: 10em; margin-bottom: 20px; margin-top: 20px;}
+table h4{margin: auto;}
+table{/*border: 5px dashed #F6D692;*/
+    border-radius: 10px;
+    margin-bottom: 3em;
+    padding: 10px;}
+.currentpage:before { content: "["; }
+.currentpage:after { content: "]"; }
+a{text-decoration: none; color: black;}
+a:hover{color: #F6D692;}
+button a:hover{color: whitesmoke;}
+@media only screen and (max-width: 600px) {
+    p{font-size: 15px;}
+    .booklist{flex-direction: column;}
+    nav ul{display: inline-flex;
+        flex-direction: column;
+    }
+    header h1{  font-weight: bold;
+        padding: 1.5em;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        position: absolute;
+        left: 10%;
+    }
+    header img{
+        position: absolute;
+        width: 10em;
+        left: 10%;
+        margin-left: auto;
+    }
+    body{width: auto;}
+    .genres li {
+        display: inline-block;
+        margin-left: 10px;
+    }
+    form{margin-left: 5em;}
+    .booklist table tr td {
+        border-bottom: none;
+    }
+}
